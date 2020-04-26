@@ -16,14 +16,14 @@
     </resultMap>
     <sql id="Base_Column_List">
         <!--@mbg.generated-->
-        id, user_id, bank, create_time, update_time, score, rank, money, active
+        id, user_id, bank, create_time, update_time, score, `rank`, money, active
     </sql>
     <select id="selectById" parameterType="java.lang.Integer" resultMap="BaseResultMap">
         <!--@mbg.generated-->
         select
         <include refid="Base_Column_List"/>
         from bank_account
-        where id = #{id,jdbcType=INTEGER}
+        where user_id = #{id,jdbcType=INTEGER}
     </select>
     <delete id="deleteById" parameterType="java.lang.Integer">
         <!--@mbg.generated-->
