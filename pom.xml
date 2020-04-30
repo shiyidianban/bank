@@ -15,6 +15,7 @@
         <module>parent</module>
         <module>kafka</module>
         <module>elasticsearch</module>
+        <module>websocket</module>
     </modules>
 
 
